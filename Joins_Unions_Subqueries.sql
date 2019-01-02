@@ -155,7 +155,7 @@ FROM StudentClass sc
 
 /* Q2: What will be the best possible join if we want to retrieve all the students who have signed up for no classes in summer ?*/
 
-SELECT st.StudentName nad, cl.ClassName
+SELECT st.StudentName, cl.ClassName
 FROM Students st
     LEFT JOIN StudentClass sc ON st.StudentID = sc.StudentID
     LEFT JOIN Classes cl ON cl.ClassID = sc.ClassID
