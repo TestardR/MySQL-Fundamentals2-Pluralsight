@@ -164,4 +164,5 @@ WHERE cl.ClassName IS NULL;
 -- shorter 
 SELECT st.StudentName
 FROM Students st
-    LEFT JOIN StudentClass sc ON st
+    LEFT JOIN StudentClass sc ON st.StudentID = sc.StudentID
+WHERE sc.ClassID IS NULL;
